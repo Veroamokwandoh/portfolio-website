@@ -22,11 +22,19 @@ function Services() {
       </div>
       {/* right side */}
       <div className="cards">
-        <div>
+        <div style={{left: '14rem'}}>
           <Cards
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop,Adobe"}
+          />
+        </div>
+        {/* card 2 */}
+        <div style={{top: "12rem", left: "-4rem"}}>
+         <Cards
+          emoji={Glasses}
+          heading={"Developer"}
+          detail={"Html, Css, JavaScript, React"}
           />
         </div>
       </div>
