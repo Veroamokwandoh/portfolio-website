@@ -4,6 +4,7 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Cards from '../Cards/Card'
+// import Resume from "../Resume/../resume.pdf";
 function Services() {
   return (
     <div className="services">
@@ -17,7 +18,9 @@ function Services() {
           <br />
           mollitia, ea modi et reprehenderit quisquam eveniet.
         </span>
+        <a href="{Resume}" download>
         <button className="button s-button">Download CV</button>
+        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right side */}
@@ -37,6 +40,15 @@ function Services() {
           detail={"Html, Css, JavaScript, React"}
           />
         </div>
+        {/* 3rd card */}
+        <div style={{top: "19rem", left: "12rem"}}>
+          <Cards
+          emoji={Humble}
+          heading={"UI/UX"}
+          detail={"In Progress"}
+          />
+        </div>
+        <div className="blur s-blur2" style={{background: "var(--purple)"}}></div>
       </div>
     </div>
   );
